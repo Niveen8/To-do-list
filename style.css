@@ -36,4 +36,19 @@ h1 {
     text-align: center;
     color: #000;
 }
+#inter-todoinput {
+    padding: 1rem 2rem;
+    border: 0.06rem solid #fff;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 1rem 0;
+}
+#input-boxs {
+    display: flex;
+    align-items: center;
+}
+
 
