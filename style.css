@@ -28,9 +28,11 @@ body {
     margin: 0 auto;
     background: #fff;
     border-radius: 0.5rem;
-    box-shadow: 0 0.1rem 0.1rem #333;
+    box-shadow: 0 0.1rem 0.1rem #baa9a9;
     padding: 0.1rem;
+    border: 2px solid #baa9a9; 
 }
+
 
 h1 {
     text-align: center;
