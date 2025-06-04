@@ -24,20 +24,22 @@ body {
     background-color: #117a8c;
 }
 #total {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     background: #fff;
     border-radius: 0.5rem;
-    box-shadow: 0 0.3rem 0.4rem #333;
-    padding: 1.3rem;
+    box-shadow: 0 0.1rem 0.1rem #baa9a9;
+    padding: 0.1rem;
+    border: 2px solid #baa9a9; 
 }
+
 
 h1 {
     text-align: center;
     color: #000;
 }
 #inter-todoinput {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border: 0.06rem solid #fff;
     border-radius: 0.3rem;
     background-color: #fff;
@@ -45,10 +47,43 @@ h1 {
     flex-direction: column;
     gap: 0.2rem;
     margin: 1rem 0;
+    
 }
 #input-boxs {
     display: flex;
     align-items: center;
+   
 }
-
+#input-boxs-cont {
+    display: flex;
+    align-items: center;
+}
+ #input-boxs-text{
+    padding: 0.831rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem 0rem 0rem 0.3rem;
+    background-color: #17a2b8;
+    color: white;
+   
+ }
+#inter-todoinput input {
+     width: 100%; 
+    padding: 0.7rem;
+    border: 0.2rem solid #ddd;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
+    outline: none;
+    
+}
+#inter-todoinput button {
+    margin-top: 0.6rem;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;}
+#inter-todoinput button:hover {
+    background-color: #117a8c;
+}
 
