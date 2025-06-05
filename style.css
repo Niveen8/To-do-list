@@ -87,3 +87,34 @@ h1 {
     background-color: #117a8c;
 }
 
+
+
+
+
+
+
+
+
+
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-buttons button {
+    flex: 1;
+    margin: 0 0.3rem;
+    padding: 0.6rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.footer-buttons button:hover {
+    background-color: #d32f2f;
+}
+
+
