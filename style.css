@@ -137,4 +137,18 @@ h1 {
     width: 19rem;
 }
 
+.modal-content .modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content button {
+    flex: 1;
+    margin: 0 0.3rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 600;
+}
 
