@@ -152,3 +152,15 @@ h1 {
     font-weight: 600;
 }
 
+.modal-content .confirm {
+    background-color: #cccccc;
+    color: black;
+}
+.modal-content .cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.modal-content .cancel:hover {
+    background-color: #d32f2f;
+}
