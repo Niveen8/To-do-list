@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 1.3rem;
     scroll-behavior: smooth;
+
+    font-family: Arial, sans-serif;
+  text-align: center;
 }
 * {
     font-family: "Figtree", serif;
@@ -97,6 +100,54 @@ h1 {
 
 
 
+/* Main Section */
+.todo-section {
+  padding: 30px 20px;
+}
+
+/* Title */
+.todo-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Filter Buttons (All / Done / Todo) */
+.filter-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ثلاث أعمدة متساوية */
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  width: 100%; /* كل زر يأخذ كامل عرض العمود الخاص به */
+  padding: 15px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #0099b8;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007a92;
+}
+
+.btn-all {
+  background-color: #005d6e;
+}
+
+/* No Tasks Message */
+.no-tasks {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
 .footer-buttons {
     display: flex;
     justify-content: space-between;
@@ -178,3 +229,4 @@ h1 {
 .modal[style="display: flex;"] .modal-content {
     transform: scale(1);
 }
+
