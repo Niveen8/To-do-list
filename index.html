@@ -27,5 +27,59 @@
 <button>add new task</button>
    </div> 
 </div>
+<<<<<<< Updated upstream
+=======
+
+
+<!-- todo-section -->
+
+<section class="todo-section">
+    <h2 class="todo-title">Todo List</h2>
+
+    <div class="filter-buttons">
+      <button class="btn btn-all">All</button>
+      <button class="btn btn-done">Done</button>
+      <button class="btn btn-todo">Todo</button>
+    </div>
+
+    <p class="no-tasks">No tasks.</p>
+
+   
+  </section>
+
+
+
+
+<!-- the last part of the project -->
+ <div class="footer-buttons">
+            <button onclick="deleteDoneTodos()">Delete done tasks</button>
+            <button onclick="deleteAllTodos()">Delete all tasks</button>
+        </div>
+    </div>
+
+  <div class="modal" id="deleteAllModal">
+        <div class="modal-content">
+            <h2>Delete All Tasks</h2>
+            <p>Are you sure you want to delete all tasks?</p>
+            <div class="modal-actions">
+                <button class="confirm" onclick="confirmDeleteAll()">Confirm</button>
+                <button class="cancel" onclick="closeDeleteAllModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+   <div class="modal" id="deleteAllDoneModal">
+        <div class="modal-content">
+            <h2>Delete All Done Tasks</h2>
+            <p>Are you sure you want to delete all completed tasks?</p>
+            <div class="modal-actions">
+                <button class="confirm" onclick="confirmDeleteAllDone()">Confirm</button>
+                <button class="cancel" onclick="closeDeleteAllDoneModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+>>>>>>> Stashed changes
 </body>
 </html>
