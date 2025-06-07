@@ -30,6 +30,6 @@ function saveTodos() {
 
     todos.push(newTodo);
     input.value = "";
-    saveTodos(); // ✅ حفظ بعد الإضافة
+    saveTodos(); /*حفظ بعد الإضافى*/
     renderTodos(currentFilter);
   }
