@@ -1,4 +1,4 @@
-let todos = JSON.parse(localStorage.getItem('Tasks')) || [];
+let todos = JSON.parse(localStorage.getItem('todos')) || [];
 function dateTodo() {
 const todoInput = document.getElementById('newTodo');
 const errorMessage = document.getElementById('error message');
@@ -21,7 +21,6 @@ if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
  errorMessage.textContent ='';
     return true;
 }
-
 function adding(){
 const todoInput = document.getElementById('NEW....');
  if (!dateTodo()) return;
