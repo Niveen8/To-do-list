@@ -248,3 +248,13 @@ h1 {
   align-items: center;
   gap: 10px;
 }
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  color: #cce71c;
+}
+
+.delete-icon {
+  color: #dc3545;
+}
