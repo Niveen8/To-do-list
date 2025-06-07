@@ -1,4 +1,4 @@
-let todos = JSON.parse(localStorage.getItem('Tasks')) || [];
+let todos = JSON.parse(localStorage.getItem('todes'))|| [];
 function dateTodo() {
 const todoInput = document.getElementById('new-todo');
 const errorMessage = document.getElementById('error-message');
@@ -37,13 +37,13 @@ function render() {
     todoList.innerHTML ='';
 
     if (todos.length === 0) {
-        todoList.innerHTML = '<li>No Any Tasks</li>';
+        todoList.innerHTML = 'No Any Tasks';
         return;
     }
       todos.forEach((todo, index) => {
-        const li = document.createElement('li');
+        const li = document.createElement('div');
         li.textContent = todo.text;
-        todoList.appendChild(li);
+        todoList.appendChild(div);
     });
 }
 function saveTodos() {
@@ -55,4 +55,4 @@ document.addEventListener(
     'DOMContentLoaded', () => {
     render();
 });
-saveTodos();
+
