@@ -1,7 +1,8 @@
 let todos = JSON.parse(localStorage.getItem('Tasks')) || [];
 function dateTodo() {
-const todoInput = document.getElementById('newTodo');
-const errorMessage = document.getElementById('error message');
+const todoInput = document.getElementById('new-todo');
+const errorMessage = document.getElementById('error-message');
+
 const value = todoInput.value.trim();
 if (value === '') {/*فاضية */
         errorMessage.textContent = 'Must contain a search and not be empty';
