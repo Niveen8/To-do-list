@@ -22,5 +22,7 @@ if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
     return true;
 }
 function adding(){
-    
+const todoInput = document.getElementById('NEW....');
+ if (!dateTodo()) return;
+
 }
