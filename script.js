@@ -7,9 +7,14 @@ if (value === '') {
         errorMessage.textContent = 'Must contain a search and not be empty';
         return false;
     }
-if (taskText.length < 10) {
+if (taskText.length < 9) {
         errorMessage.textContent = 'Your search must contain at least 10 characters.';
         return false;
     }
+    if (taskText[0] >= '0' && taskText[0] <= '9') {
+        errorMessage.textContent = ' search cannot start with a number';
+        return;
+    }
+ 
 
 }
