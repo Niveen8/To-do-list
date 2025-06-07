@@ -19,5 +19,6 @@ if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
         errorMessage.textContent = 'search must contain only English characters';
         return false;
     }
-
+ errorMessage.textContent = '';
+    return true;
 }
