@@ -46,3 +46,6 @@ function render() {
 function saveTodos() {
     localStorage.setItem('Tasks', JSON.stringify(Tasks));
 }
+document.addEventListener('DOMContentLoaded', () => {
+    render();
+});
