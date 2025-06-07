@@ -33,7 +33,7 @@ const todoInput = document.getElementById('new-todo');
     render();
 }
 function render() {
-    const todoList = document.getElementById('Todo List');
+  const todoList = document.getElementById('todo-list');
     todoList.innerHTML ='';
 
     if (todos.length === 0) {
@@ -51,7 +51,8 @@ function saveTodos() {
 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener(
+    'DOMContentLoaded', () => {
     render();
 });
 saveTodos();
