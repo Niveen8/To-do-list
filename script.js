@@ -16,7 +16,7 @@ if (taskText.length < 9) {
         return;
     }
 if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
-        errorMessage.textContent = '⛔ Task must contain only English characters';
+        errorMessage.textContent = 'search must contain only English characters';
         return false;
     }
 
