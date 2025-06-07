@@ -21,3 +21,6 @@ if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
  errorMessage.textContent ='';
     return true;
 }
+function adding(){
+    
+}
