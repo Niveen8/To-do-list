@@ -11,7 +11,8 @@ if (taskText.length < 9) { /*لحد  اقل اشي9 مشان اعرف امشي  
         errorMessage.textContent = 'Your search must contain at least 10 characters.';
         return false;
     }
-    if (taskText[0] >= '0' && taskText[0] <= '9') {/*0-9*/        errorMessage.textContent = ' search cannot start with a number';
+    if (taskText[0] >= '0' && taskText[0] <= '9') {/*0-9*/       
+         errorMessage.textContent = ' search cannot start with a number';
         return;
     }
 if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
@@ -51,4 +52,4 @@ function saveTodos() {
 document.addEventListener('DOMContentLoaded', () => {
     render();
 });
-
+saveTodos();
