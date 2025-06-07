@@ -15,6 +15,9 @@ if (taskText.length < 9) {
         errorMessage.textContent = ' search cannot start with a number';
         return;
     }
- 
+if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
+        errorMessage.textContent = '⛔ Task must contain only English characters';
+        return false;
+    }
 
 }
