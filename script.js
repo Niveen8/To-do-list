@@ -21,6 +21,7 @@ if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(value)) { /*احرف وارقام */
  errorMessage.textContent ='';
     return true;
 }
+
 function adding(){
 const todoInput = document.getElementById('NEW....');
  if (!dateTodo()) return;
@@ -46,3 +47,5 @@ function render() {
 function saveTodos() {
     localStorage.setItem('Tasks', JSON.stringify(Tasks));
 }
+
+
