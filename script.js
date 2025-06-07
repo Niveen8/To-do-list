@@ -19,4 +19,17 @@ function saveTodos() {
     if (taskText === "") {
       document.getElementById("error-message").textContent = "Please enter a task.";
       return;
-    }}
+    }
+    document.getElementById("error-message").textContent = "";
+
+    const newTodo = {
+      id: Date.now(),
+      text: taskText,
+      done: false
+    };
+
+    todos.push(newTodo);
+    input.value = "";
+    saveTodos(); // ✅ حفظ بعد الإضافة
+    renderTodos(currentFilter);
+  }
