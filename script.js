@@ -64,3 +64,11 @@ function saveTodos() {
     section.appendChild(taskEl);
   });
 }
+
+function toggleDone(id) {
+  todos = todos.map(todo =>
+    todo.id === id ? { ...todo, done: !todo.done } : todo
+  );
+  saveTodos(); // ✅ حفظ بعد التعديل
+  renderTodos(currentFilter);
+}
