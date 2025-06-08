@@ -73,3 +73,9 @@ function toggleDone(id) {
   renderTodos(currentFilter);
 }
 let currentFilter = "All";
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentFilter = btn.textContent;
+    renderTodos(currentFilter);
+  });
+});
