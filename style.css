@@ -258,3 +258,6 @@ h1 {
 .delete-icon {
   color: #dc3545;
 }
+.done-task {
+  text-decoration: line-through;
+  color: rgb(233, 19, 19);}
