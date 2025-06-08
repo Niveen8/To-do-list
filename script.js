@@ -85,4 +85,13 @@ function deleteDoneTodos() {
     document.getElementById("deleteAllDoneModal").style.display = "block";
   }
 
+    function confirmDeleteAllDone() {
+    todos = todos.filter(todo => !todo.done);
+    document.getElementById("deleteAllDoneModal").style.display = "none";
+    saveTodos(); // ✅ حفظ بعد الحذف
+    renderTodos(currentFilter);
+  }
+    function closeDeleteAllDoneModal() {
+    document.getElementById("deleteAllDoneModal").style.display = "none";
+  }
 
