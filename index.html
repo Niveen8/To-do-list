@@ -117,6 +117,7 @@ function renderTodos(filter = "All") {
     taskEl.className = "task";
     taskEl.innerHTML = `
       <div class="task-content">
+        <span class="${todo.done ? 'done-task' : ''}">
           ${todo.text}
         </span>
         <div class="task-actions">
