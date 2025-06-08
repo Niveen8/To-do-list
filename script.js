@@ -114,6 +114,11 @@ function deleteDoneTodos() {
       deleteTodo(id); // نحذف القديم لتعديله
     }
   }
+   function deleteTodo(id) {
+    todos = todos.filter(todo => todo.id !== id);
+    saveTodos(); // ✅ حفظ بعد الحذف الفردي
+    renderTodos(currentFilter);
+  } 
 
 
 
