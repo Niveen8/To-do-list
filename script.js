@@ -106,5 +106,13 @@ function deleteDoneTodos() {
     function closeDeleteAllModal() {
     document.getElementById("deleteAllModal").style.display = "none";
   }
+    function editTodo(id) {
+    const todo = todos.find(t => t.id === id);
+    if (todo) {
+      input.value = todo.text;
+      deleteTodo(id); // نحذف القديم لتعديله
+    }
+  }
+
 
 
