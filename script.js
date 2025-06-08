@@ -98,4 +98,11 @@ function deleteDoneTodos() {
     function deleteAllTodos() {
     document.getElementById("deleteAllModal").style.display = "block";
   }
+   function confirmDeleteAll() {
+    todos = [];
+    document.getElementById("deleteAllModal").style.display = "none";
+    saveTodos(); // ✅ حفظ بعد الحذف الكلي
+    renderTodos(currentFilter);
+  }
+
 
