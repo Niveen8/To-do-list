@@ -1,5 +1,4 @@
-
-let todos = [];
+ let todos = [];
   const savedTodos = localStorage.getItem("todos");
   if (savedTodos) {
     todos = JSON.parse(savedTodos);
@@ -85,5 +84,4 @@ filterButtons.forEach(btn => {
 function deleteDoneTodos() {
     document.getElementById("deleteAllDoneModal").style.display = "block";
   }
-  
  
