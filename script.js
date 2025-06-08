@@ -104,5 +104,8 @@ function deleteDoneTodos() {
     saveTodos(); // ✅ حفظ بعد الحذف الكلي
     renderTodos(currentFilter);
   }
+    function closeDeleteAllModal() {
+    document.getElementById("deleteAllModal").style.display = "none";
+  }
 
 
