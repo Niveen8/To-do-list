@@ -33,3 +33,49 @@ function saveTodos() {
     saveTodos(); 
     renderTodos(currentFilter);
   }
+
+  function renderTodos(filter = "All") {
+  const existingTasks = section.querySelectorAll(".task");
+  existingTasks.forEach(task => task.remove());
+
+  let filtered = todos;
+ if (filter === "Done") {
+    filtered = todos.filter(todo => todo.done);
+  } else if (filter === "Todo") {
+    filtered = todos.filter(todo => !todo.done);
+  }
+
+  noTasksMessage.style.display = filtered.length === 0 ? "block" : "none";
+   filtered.forEach(todo => {
+    const taskEl = document.createElement("div");
+    taskEl.className = "task";
+    taskEl.innerHTML = `
+      <div class="task-content">
+        <span class="${todo.done ? 'done-task' : ''}">
+          ${todo.text}
+        </span>
+        <div class="task-actions">
+          <input type="checkbox" ${todo.done ? "checked" : ""} onchange="toggleDone(${todo.id})">
+          <i class="fas fa-pen edit-icon" onclick="editTodo(${todo.id})"></i>
+          <i class="fas fa-trash delete-icon" onclick="deleteTodo(${todo.id})"></i>
+        </div>
+      </div>
+    `;
+    section.appendChild(taskEl);
+  });
+}
+
+function toggleDone(id) {
+  todos = todos.map(todo =>
+    todo.id === id ? { ...todo, done: !todo.done } : todo
+  );
+  saveTodos(); // ✅ حفظ بعد التعديل
+  renderTodos(currentFilter);
+}
+let currentFilter = "All";
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentFilter = btn.textContent;
+    renderTodos(currentFilter);
+  });
+});
