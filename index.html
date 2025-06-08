@@ -10,7 +10,7 @@
 
 </head>
 <body> 
-  <h1>TodoInput</h1>
+     <h1>TodoInput</h1>
    <div id="total">
     <div id="inter-todoinput">
         <div id="input-boxs">
@@ -19,15 +19,16 @@
           <i class="fas fa-book"></i>
          </div>
         </div>
-    <!--بدي اضيف جزئية js-->
-    <input type="text" id="New-Todo" class="formnewtodo" placeholder="New Todo">
+   
+    <input type="text" id="new-Todo" class="formnewtodo" placeholder="New Todo" oninput="saveTodos()">
 </div>
 <span class="error" id="error-message"></span>
-<!--بدي اضيف جزئية js-->
-<button>add new task</button>
+<button onclick="addTodo()">add new task</button>
+    
+
+
    </div> 
 </div>
-
 
 
 <!-- todo-section -->
@@ -86,66 +87,12 @@
 
 
 
-<script>
 
 
 
 
 
-
-
-const section = document.querySelector(".todo-section");
-const filterButtons = document.querySelectorAll(".filter-buttons .btn");
-const noTasksMessage = document.querySelector(".no-tasks");
-let currentFilter =  "All";
-
-function renderTodos(filter = "All") {
-  const existingTasks = section.querySelectorAll(".task");
-  existingTasks.forEach(task => task.remove());
-
-  let filtered = todos;
-  if (filter === "Done") {
-    filtered = todos.filter(todo => todo.done);
-  } else if (filter === "Todo") {
-    filtered = todos.filter(todo => !todo.done);
-  }
-
-  noTasksMessage.style.display = filtered.length === 0 ? "block" : "none";
-
-    filtered.forEach(todo => {
-    const taskEl = document.createElement("div");
-    taskEl.className = "task";
-    taskEl.innerHTML = `
-      <div class="task-content">
-        <span class="${todo.done ? 'done-task' : ''}">
-          ${todo.text}
-        </span>
-        <div class="task-actions">
-          <input type="checkbox" ${todo.done ? "checked" : ""} onchange="toggleDone(${todo.id})">
-          <i class="fas fa-pen edit-icon" onclick="editTodo(${todo.id})"></i>
-          <i class="fas fa-trash delete-icon" onclick="deleteTodo(${todo.id})"></i>
-        </div>
-      </div>
-    `;
-    section.appendChild(taskEl);
-  });
-}
-
-filterButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    currentFilter = btn.textContent;
-    renderTodos(currentFilter);
-  });
-});
-
-renderTodos(currentFilter);
-
-
-
-</script>
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
