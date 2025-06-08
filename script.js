@@ -1,3 +1,4 @@
+
 let todos = [];
   const savedTodos = localStorage.getItem("todos");
   if (savedTodos) {
@@ -79,3 +80,10 @@ filterButtons.forEach(btn => {
     renderTodos(currentFilter);
   });
 });
+ 
+
+function deleteDoneTodos() {
+    document.getElementById("deleteAllDoneModal").style.display = "block";
+  }
+  
+ 
