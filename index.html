@@ -10,7 +10,7 @@
 
 </head>
 <body> 
-  <h1>TodoInput</h1>
+     <h1>TodoInput</h1>
    <div id="total">
     <div id="inter-todoinput">
         <div id="input-boxs">
@@ -19,14 +19,35 @@
           <i class="fas fa-book"></i>
          </div>
         </div>
-    <!--بدي اضيف جزئية js-->
-    <input type="text" id="New-Todo" class="formnewtodo" placeholder="New Todo">
+   
+    <input type="text" id="new-Todo" class="formnewtodo" placeholder="New Todo" oninput="saveTodos()">
 </div>
 <span class="error" id="error-message"></span>
-<!--بدي اضيف جزئية js-->
-<button>add new task</button>
+<button onclick="addTodo()">add new task</button>
+    
+
+
    </div> 
 </div>
+
+
+<!-- todo-section -->
+
+<section class="todo-section">
+    <h2 class="todo-title">Todo List</h2>
+
+    <div class="filter-buttons">
+      <button class="btn btn-all">All</button>
+      <button class="btn btn-done">Done</button>
+      <button class="btn btn-todo">Todo</button>
+    </div>
+
+    <p class="no-tasks">No tasks.</p>
+
+   
+  </section>
+
+
 
 
 
@@ -63,6 +84,15 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
