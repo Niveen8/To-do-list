@@ -33,9 +33,16 @@ function saveTodos() {
     saveTodos(); 
     renderTodos(currentFilter);
   }
-  
+
   function renderTodos(filter = "All") {
   const existingTasks = section.querySelectorAll(".task");
   existingTasks.forEach(task => task.remove());
 
   let filtered = todos;
+ if (filter === "Done") {
+    filtered = todos.filter(todo => todo.done);
+  } else if (filter === "Todo") {
+    filtered = todos.filter(todo => !todo.done);
+  }
+
+  noTasksMessage.style.display = filtered.length === 0 ? "block" : "none";
