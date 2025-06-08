@@ -46,3 +46,21 @@ function saveTodos() {
   }
 
   noTasksMessage.style.display = filtered.length === 0 ? "block" : "none";
+   filtered.forEach(todo => {
+    const taskEl = document.createElement("div");
+    taskEl.className = "task";
+    taskEl.innerHTML = `
+      <div class="task-content">
+        <span class="${todo.done ? 'done-task' : ''}">
+          ${todo.text}
+        </span>
+        <div class="task-actions">
+          <input type="checkbox" ${todo.done ? "checked" : ""} onchange="toggleDone(${todo.id})">
+          <i class="fas fa-pen edit-icon" onclick="editTodo(${todo.id})"></i>
+          <i class="fas fa-trash delete-icon" onclick="deleteTodo(${todo.id})"></i>
+        </div>
+      </div>
+    `;
+    section.appendChild(taskEl);
+  });
+}
