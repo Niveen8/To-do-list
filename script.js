@@ -94,4 +94,7 @@ function deleteDoneTodos() {
     function closeDeleteAllDoneModal() {
     document.getElementById("deleteAllDoneModal").style.display = "none";
   }
+    function deleteAllTodos() {
+    document.getElementById("deleteAllModal").style.display = "block";
+  }
 
