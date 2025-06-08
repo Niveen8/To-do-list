@@ -72,3 +72,4 @@ function toggleDone(id) {
   saveTodos(); // ✅ حفظ بعد التعديل
   renderTodos(currentFilter);
 }
+let currentFilter = "All";
