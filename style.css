@@ -137,7 +137,7 @@ h1 {
 }
 
 .btn-all {
-  background-color: #0099b8;
+  background-color: #007a92;
 }
 
 /* No Tasks Message */
@@ -181,7 +181,7 @@ h1 {
 }
 
 .modal-content {
-    background: #fff;
+    background: #f8f5f5;
     padding: 1.3rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -238,11 +238,13 @@ h1 {
   border-radius: 8px;
   text-align: left;
 }
+
 .task-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .task-actions {
   display: flex;
   align-items: center;
@@ -252,12 +254,153 @@ h1 {
 .edit-icon,
 .delete-icon {
   cursor: pointer;
-  color: #cce71c;
+  color: #c1e83f;
 }
 
 .delete-icon {
   color: #dc3545;
 }
+
+
 .done-task {
   text-decoration: line-through;
   color: rgb(233, 19, 19);}
+
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-actions button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-actions .confirm {
+  background-color: #ccc;
+}
+
+.modal-actions .cancel {
+  background-color: red;
+  color: white;
+}
+.modal {
+  display: none; /* نخفي النافذة بالبداية */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.modal-content input[type="text"] {
+  padding: 8px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-actions .save {
+  background-color: teal;
+  color: white;
+}
+
+.modal-actions .cancel {
+  background-color: crimson;
+  color: white;
+}
+/* نافذة إعادة التسمية */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-buttons .save {
+  background-color: #00bcd4;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-buttons .cancel {
+  background-color: #f44336;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
