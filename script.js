@@ -92,4 +92,7 @@ function deleteDoneTodos() {
     saveTodos(); // ✅ حفظ بعد الحذف
     renderTodos(currentFilter);
   }
-  
+    function closeDeleteAllDoneModal() {
+    document.getElementById("deleteAllDoneModal").style.display = "none";
+  }
+
