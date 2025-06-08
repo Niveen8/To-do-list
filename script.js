@@ -33,3 +33,9 @@ function saveTodos() {
     saveTodos(); 
     renderTodos(currentFilter);
   }
+  
+  function renderTodos(filter = "All") {
+  const existingTasks = section.querySelectorAll(".task");
+  existingTasks.forEach(task => task.remove());
+
+  let filtered = todos;
