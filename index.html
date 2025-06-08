@@ -131,7 +131,12 @@ function renderTodos(filter = "All") {
   });
 }
 
-
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentFilter = btn.textContent;
+    renderTodos(currentFilter);
+  });
+});
 
 
 
