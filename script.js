@@ -1,7 +1,7 @@
 
 let todos = [];
 
-  // ✅ تحميل البيانات من localStorage
+  //  تحميل البيانات من localStorage
 
   const savedTodos = localStorage.getItem("todos");
   if (savedTodos) {
@@ -38,7 +38,7 @@ let todos = [];
 
     todos.push(newTodo);
     input.value = "";
-    saveTodos(); // ✅ حفظ بعد الإضافة
+    saveTodos(); //  حفظ بعد الإضافة
     renderTodos(currentFilter);
   }
 
@@ -79,7 +79,7 @@ let todos = [];
     todos = todos.map(todo =>
       todo.id === id ? { ...todo, done: !todo.done } : todo
     );
-    saveTodos(); // ✅ حفظ بعد التعديل
+    saveTodos(); //  حفظ بعد التعديل
     renderTodos(currentFilter);
   }
 
@@ -100,7 +100,7 @@ let todos = [];
 
     todos = todos.filter(todo => !todo.done);
     document.getElementById("deleteAllDoneModal").style.display = "none";
-    saveTodos(); // ✅ حفظ بعد الحذف
+    saveTodos(); //  حفظ بعد الحذف
     renderTodos(currentFilter);
   }
 
@@ -117,7 +117,7 @@ let todos = [];
 
     todos = [];
     document.getElementById("deleteAllModal").style.display = "none";
-    saveTodos(); // ✅ حفظ بعد الحذف الكلي
+    saveTodos(); //  حفظ بعد الحذف الكلي
     renderTodos(currentFilter);
   }
 
@@ -193,6 +193,6 @@ function closeSingleDeleteModal() {
 
 
 
-  // ✅ عرض المهام المحفوظة عند فتح الصفحة
+  // عرض المهام المحفوظة عند فتح الصفحة
   renderTodos(currentFilter);
 

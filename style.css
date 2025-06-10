@@ -112,7 +112,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Filter Buttons (All / Done / Todo) */
+/*section: Filter Buttons (All / Done / Todo) */
 .filter-buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* ثلاث أعمدة متساوية */
