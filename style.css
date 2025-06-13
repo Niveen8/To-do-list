@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
   text-align: center;
 }
-* {
+* {/*للجميع*/
     font-family: "Figtree", serif;
     scrollbar-width: thin;
     scrollbar-color: #17a2b8 #ffff;
