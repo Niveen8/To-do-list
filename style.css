@@ -12,21 +12,21 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #17a2b8 #ffff;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar {/*خاص بالهيكل تبع التمرير*/
     width: 0.5rem;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {/*خاص بالتمرير خلفية*/
     background-color: #fff;
     border-radius: 1.5rem;
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {/* للسحب عند الزر الخاص بالتمرير*/
     background-color: #17a2b8;
     border-radius: 1.5rem;
 }
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {/*الماورس تبع التمرير  اللون*/
     background-color: #117a8c;
 }
-#total {
+#total {/* خواص الصندوق الاول تبع الادخال*/
     max-width: 90%;
     margin: 0 auto;
     background: #fff;
@@ -37,11 +37,11 @@ body {
 }
 
 
-h1 {
+h1 {/*   تبعت الصندوق الاول الادخالh1 الخواص لل*/
     text-align: center;
     color: #000;
 }
-#inter-todoinput {
+#inter-todoinput {/* خاصيات صندوق الادخال الصندوق الاول*/
     padding: 0.5rem 1rem;
     border: 0.06rem solid #fff;
     border-radius: 0.3rem;
@@ -52,16 +52,14 @@ h1 {
     margin: 1rem 0;
     
 }
-#input-boxs {
+#input-boxs
+,#input-boxs-cont { /*    خاصيات صندوق الادخال الصندوق الاول وكمان مشان الوسط */
     display: flex;
     align-items: center;
    
 }
-#input-boxs-cont {
-    display: flex;
-    align-items: center;
-}
- #input-boxs-text{
+ 
+ #input-boxs-text{ /* خواص صندوق الاخال عند الكتابة*/
     padding: 0.831rem;
     display: flex;
     align-items: center;
@@ -70,7 +68,7 @@ h1 {
     color: white;
    
  }
-#inter-todoinput input {
+#inter-todoinput input { /* لل type تبع ال input*/
      width: 100%; 
     padding: 0.7rem;
     border: 0.2rem solid #ddd;
@@ -78,7 +76,7 @@ h1 {
     outline: none;
     
 }
-#inter-todoinput button {
+#inter-todoinput button {/* للزر تبع الصندوق الاول */
     margin-top: 0.6rem;
     background-color: #17a2b8;
     color: white;
@@ -86,7 +84,7 @@ h1 {
     padding: 0.6rem 1.3rem;
     border-radius: 0.3rem;
     cursor: pointer;}
-#inter-todoinput button:hover {
+#inter-todoinput button:hover {/* للزر تبع الصندوق الاول  للماوس */
     background-color: #117a8c;
 }
 
