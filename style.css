@@ -110,7 +110,7 @@ h1 {/*   تبعت الصندوق الاول الادخالh1 الخواص لل*/
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #0099b8;
+  background-color: #17a2b8;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -120,7 +120,7 @@ h1 {/*   تبعت الصندوق الاول الادخالh1 الخواص لل*/
 }
 
 .btn-all { /*لضمان الوان الازرار نفس بعض ال 3 الموجودات في قسم 2*/
-  background-color: #007a92;
+  background-color: #17a2b8;
 }
 
 .no-tasks {/*لما ما يكون في رسائل  المقصد مش مضيوف ولا مهمة*/
@@ -331,7 +331,7 @@ h1 {/*   تبعت الصندوق الاول الادخالh1 الخواص لل*/
 
 .modal-actions .save { /* الوان خلفية و  الكتابة*/
 
-  background-color: teal;
+  background-color: #17a2b8;
   color: white;
 }
 
