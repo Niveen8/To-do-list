@@ -7,6 +7,11 @@ body {
     font-family: Arial, sans-serif;
   text-align: center;
 }
+.container{/*مشان اعملهم كلهم فوق بعض نفس العرض قصدي*/
+    max-width: 37.5 rem;
+    width: 80%;
+    margin: auto;
+}
 * {/*للجميع*/
     font-family: "Figtree", serif;
     scrollbar-width: thin;
